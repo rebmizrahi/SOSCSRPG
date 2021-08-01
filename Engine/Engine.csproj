@@ -5,7 +5,36 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Images\Locations\" />
+    <None Remove="Graphics\Locations\FarmFields.png" />
+    <None Remove="Graphics\Locations\Farmhouse.png" />
+    <None Remove="Graphics\Locations\HerbalistsGarden.png" />
+    <None Remove="Graphics\Locations\HerbalistsHut.png" />
+    <None Remove="Graphics\Locations\Home.png" />
+    <None Remove="Graphics\Locations\SpiderForest.png" />
+    <None Remove="Graphics\Locations\TownGate.png" />
+    <None Remove="Graphics\Locations\TownSquare.png" />
+    <None Remove="Graphics\Locations\Trader.png" />
+  </ItemGroup>
+
+<ItemGroup>
+	<Resource Include="Graphics\Locations\FarmFields.png" />
+	
+	<Resource Include="Graphics\Locations\Farmhouse.png" />
+
+	<Resource Include="Graphics\Locations\HerbalistsGarden.png" />
+
+	<Resource Include="Graphics\Locations\HerbalistsHut.png" />
+
+	<Resource Include="Graphics\Locations\Home.png" />
+
+	<Resource Include="Graphics\Locations\SpiderForest.png" />
+
+	<Resource Include="Graphics\Locations\TownGate.png" />
+
+	<Resource Include="Graphics\Locations\TownSquare.png" />
+
+	<Resource Include="Graphics\Locations\Trader.png" />
+
   </ItemGroup>
 
 </Project>
