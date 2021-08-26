@@ -14,6 +14,9 @@
     <None Remove="Graphics\Locations\TownGate.png" />
     <None Remove="Graphics\Locations\TownSquare.png" />
     <None Remove="Graphics\Locations\Trader.png" />
+    <None Remove="Graphics\Monsters\GiantSpider.png" />
+    <None Remove="Graphics\Monsters\Rat.png" />
+    <None Remove="Graphics\Monsters\Snake.png" />
   </ItemGroup>
 
 <ItemGroup>
@@ -34,6 +37,12 @@
 	<Resource Include="Graphics\Locations\TownSquare.png" />
 
 	<Resource Include="Graphics\Locations\Trader.png" />
+
+	<Resource Include="Graphics\Monsters\GiantSpider.png" />
+
+	<Resource Include="Graphics\Monsters\Rat.png" />
+
+	<Resource Include="Graphics\Monsters\Snake.png" />
 
   </ItemGroup>
 

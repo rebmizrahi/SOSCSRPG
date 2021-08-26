@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Collections.ObjectModel;
 using System.Text;
 
 namespace Engine.Models
@@ -60,6 +61,16 @@ namespace Engine.Models
                 OnPropertyChanged(nameof(Gold));
             }
         }
+
+        public ObservableCollection<GameItem> Inventory { get; set; } //handles OnPropertyChanged/updates
+        public ObservableCollection<QuestStatus> Quests { get; set; } //handles OnPropertyChanged/updates
+
+        public Player()
+        {
+            Inventory = new ObservableCollection<GameItem>();
+            Quests = new ObservableCollection<QuestStatus>();
+        }
+
 
      
     }

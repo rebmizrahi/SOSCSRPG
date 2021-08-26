@@ -8,7 +8,7 @@ namespace Engine.Models
     {
         private List<Location> locations = new List<Location>();
 
-        internal void addLocation(int xCoord, int yCoord, string name, string descr, string imageName)
+        internal void AddLocation(int xCoord, int yCoord, string name, string descr, string imageName)
         {
             Location loc = new Location();
             loc.XCoordinate = xCoord;

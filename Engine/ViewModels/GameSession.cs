@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Text;
 using Engine.Models;
 using Engine.Factories;
+using System.Linq;
 
 namespace Engine.ViewModels
 {
@@ -23,6 +24,8 @@ namespace Engine.ViewModels
                 OnPropertyChanged(nameof(hasSouthLoc));
                 OnPropertyChanged(nameof(hasWestLoc));
                 OnPropertyChanged(nameof(hasEastLoc));
+
+                GivePlayerQuestsAtLocation();
             }
         }
         public World CurrentWorld { get; set; }
@@ -91,5 +94,17 @@ namespace Engine.ViewModels
             }
         }
      
+        public void GivePlayerQuestsAtLocation()
+        {
+            foreach(Quest quest in CurrentLocation.QuestsAvailable)
+            {
+                //if current player does not have that quest already
+                    //if !any quest ID of current player's quests q matches Quest quest
+                if (!CurrentPlayer.Quests.Any(q => q.PlayerQuest.ID == quest.ID))
+                {
+                    CurrentPlayer.Quests.Add(new QuestStatus(quest));
+                }
+            }
+        }
     }
 }
